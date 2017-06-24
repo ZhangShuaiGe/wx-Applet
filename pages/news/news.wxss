@@ -1,0 +1,5 @@
+/* pages/news/news.wxss */
+.test{
+  color:red;
+  font-size: 60px;
+}

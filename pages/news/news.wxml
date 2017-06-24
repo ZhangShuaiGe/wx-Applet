@@ -1,0 +1,9 @@
+<!--pages/news/news.wxml-->
+<view class="classname">
+    {{val}}
+</view>
+<view wx:for="{{array}}" wx:for-index="key" wx:for-item="val">
+  {{key}}:{{val}}
+</view>
+<view class="test">22233</view>
+
