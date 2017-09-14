@@ -9,8 +9,6 @@
     年龄：24
     <scroll-view>性别：未知</scroll-view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-    <image src="../../images/img.jpg"></image>
-  </view>
+  <view>技术栈：</view>
+  <view style="word-break:break-all">react+redux+webpack+node(express)+mongodb</view>
 </view>

@@ -1,0 +1,18 @@
+<!--video.wxml-->
+<!-- <view class="section tc">
+  <video src="{{src}}"   controls ></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+  </view>
+</view> -->
+
+<view class="section tc">
+  <video id="myVideo" style="display:block;margin:0 auto;" id="myVideo" src="{{src}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+    <input bindblur="bindInputBlur" value="123"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+    <button bindtap="pause">暂停</button>
+    <button bindtap="play">播放</button>
+  </view>
+</view>

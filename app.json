@@ -1,39 +1,43 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/logs/logs",
-        "pages/news/news"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#108ee9",
-        "navigationBarTitleText": "张帅的小程序",
-        "navigationBarTextStyle": "white",
-        "backgroundColor": "#eeeeee"
-    },
-    "tabBar": {
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "text": "首页",
-                "borderStyle":"white"
-            },
-            {
-                "pagePath": "pages/logs/logs",
-                "text": "日志",
-                "borderStyle": "white"
-            },
-            {
-                "pagePath": "pages/news/news",
-                "text": "布局",
-                "borderStyle": "white"
-            },
-            {
-                "pagePath": "pages/logs/logs",
-                "text": "日志",
-                "borderStyle":"white"
-            }
-        ]
-    },
-    "debug": true
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/test/test",
+    "pages/map/map",
+    "pages/video/video"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#108ee9",
+    "navigationBarTitleText": "张帅的小程序",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "borderStyle": "white"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "borderStyle": "white"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "功能",
+        "borderStyle": "white"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "borderStyle": "white"
+      }
+    ]
+  },
+  "debug": true
 }

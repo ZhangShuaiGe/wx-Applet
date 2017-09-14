@@ -1,9 +1,35 @@
 <!--pages/news/news.wxml-->
-<view class="classname">
-    {{val}}
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" indicator-color="{{color}}" indicator-active-color="{{active}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image banner" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 索引默认index 值默认 item -->
+<view class="nav">
+  <view bindtap="code" wx:for="{{navTitle}}">
+    <image class="nav_img" src="../../bg.jpg"></image>
+    <view>{{item}}</view> 
+  </view>
 </view>
-<view wx:for="{{array}}" wx:for-index="key" wx:for-item="val">
-  {{key}}:{{val}}
+<!-- 课程 -->
+<view class="course_box">
+  <image src="../../images/banner1.png"></image>
+  <image src="../../images/banner2.png"></image>
+  <image src="../../images/banner3.jpg"></image>
+  <image src="../../images/banner4.jpg"></image>
 </view>
-<view class="test">22233</view>
+<!-- 热门课程 -->
+<!-- 跳转测试 -->
+<view class="test_box">
+  <!-- <navigator class="btn" url="../test/test" hover-class="navigator-hover">调用跳转</navigator> -->
+  <button bindtap="map" type="default">调用地图</button>
+  <button bindtap="code" type="default">调用扫一扫</button>
+  <button bindtap="video" type="default">调用video</button>
+  <button type="default">调用audio</button>
+  <button type="default">调用录音</button>
+  <button type="default">调用文件系统</button>
+</view>
+<!-- 地图 -->
 
